@@ -14,16 +14,13 @@
         <div class="inputs-container">
             <div id="wrapper-input-binary" class="wrapper">
                 <label for="input-header">Binary Number</label>
-                <textarea id="input-binary" class="input" autofocus rows="1" cols="1" maxlength="30" placeholder="Enter binary number..."></textarea>
-                <p id="binary-error" class="error">Only 0-1 accepted, max 30 symbols</p>
+                <input id="input-binary" class="input" type="number" autofocus rows="1" cols="1" min="0" maxlength="30" placeholder="Enter binary number..."></input>
+                <p id="binary-error" class="error"></p>
             </div>
-            <div class="buttons-container">
-                <button class="button" id="button-convert">Convert</button>
                 <button class="button" id="button-clear">🗑️</button>
-            </div>
             <div id="wrapper-input-decimal" class="wrapper">
                 <label for="input-decimal">Decimal Number</label>
-                <textarea id="input-decimal" class="input" rows="1" cols="1" maxlength="30" placeholder="Enter decimal number..."></textarea>
+                <textarea disabled id="input-decimal" class="input" rows="1" cols="1"  placeholder="Enter decimal number..."></textarea>
                 <p id="decimal-error" class="error">Only 0-9 accepted, max 30 symbols</p>
             </div>
         </div>
